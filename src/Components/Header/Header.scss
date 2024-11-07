@@ -17,11 +17,45 @@ a {
     text-decoration: none;
     color: black;
 
-    &:active {
+    &.active {
         text-decoration: underline;
     }
 }
 
 .logo {
     width: 130px;
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        padding: 20px;
+        margin: 0 20px;
+    }
+
+    .nav-header {
+
+        font-size: 12px;
+        gap: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+
+        &.active {
+            text-decoration: underline;
+        }
+
+        .logo {
+            width: 130px;
+            height: auto;
+        }
+    }
+
+
+
+
+
+
 }
