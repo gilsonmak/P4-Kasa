@@ -1,0 +1,29 @@
+.error {
+  display: flex;
+  flex-direction: column;
+
+
+  .error-titre {
+    
+    font-size: 288px;
+    color: #ff6060;
+    margin-bottom: 12px;
+  }
+
+  .error-message {
+    
+    font-size: 36px;
+    color: #ff6060;
+    margin: 60px;
+  
+
+  }
+
+  .error-link {
+
+   
+    font-size: 18px;
+    color: #000000;
+  }
+
+}

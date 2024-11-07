@@ -1,0 +1,27 @@
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+}
+
+.nav-header {
+    display: flex;
+    gap: 57px;
+    font-weight: 500;
+    font-size: 24px
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+    &:active {
+        text-decoration: underline;
+    }
+}
+
+.logo {
+    width: 130px;
+}
