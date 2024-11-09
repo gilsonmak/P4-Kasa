@@ -22,7 +22,7 @@ function AppRouter() {
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/aboutpage' element={<AboutPage />} />
-          <Route path='/housingpage' element={<HousingPage />} />
+          <Route path='/housingpage/:id' element={<HousingPage />} />
           <Route path='/*' element={<ErrorPage />} />
         </Routes>
         <Footer />

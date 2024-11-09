@@ -5,11 +5,6 @@ import Card from "../../Components/Card/Card";
 import logements from "../../Data/logements.json"
 import "./HomePage.scss"
 
-
-
-
-
-
 function HomePage() {
 
     return (

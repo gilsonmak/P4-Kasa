@@ -14,16 +14,40 @@
     
     font-size: 36px;
     color: #ff6060;
-    margin: 60px;
+    margin: 0px;
   
 
   }
 
   .error-link {
 
-   
-    font-size: 18px;
-    color: #000000;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    font-weight: 500;
+    margin: 180px 0;
+    
   }
+
+}
+
+@media (max-width: 768px) {
+
+  .error-titre {
+
+    font-size: 96px;
+  }
+
+  .error-message {
+
+    font-size: 18px;
+  }
+
+  .error-link {
+
+    margin-bottom: 230px;
+  }
+
+
 
 }
