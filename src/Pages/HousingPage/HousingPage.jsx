@@ -18,7 +18,7 @@ function HousingPage() {
         <div>
 
             <h1>{logement.title}</h1>
-            <p>{logement.description}</p>
+            <p> Description :{logement.description}</p>
             
         </div>
     )
