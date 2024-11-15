@@ -9,7 +9,7 @@ function Card({id,title,cover}) {
 
     return (
 
-        <Link to={`/logement/${id}`} className="card-link">
+        <Link to={`/housingpage/${id}`} className="card-link">
         <article className="card">
             <img src={cover} alt={title} />
             <h2>{title}</h2>

@@ -3,16 +3,15 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     border: 15px;
-    width: 91%;
-    margin: 60px;
+    max-width: 1240px;
+    margin: 10px auto 20px auto;
     background-color: #F6F6F6;
+    border-radius: 25px;
 }
 
 @media (max-width: 768px){
     .cardContainer{
-        width:100%;
         background-color: white;
-        margin:-5px;
-        margin-bottom: 10px;
+        margin: 10px auto 20px auto;
     }
 }
