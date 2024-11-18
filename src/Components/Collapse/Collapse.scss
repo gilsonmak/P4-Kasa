@@ -11,17 +11,22 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background: #ff6f61;
+        background: #FF6060;
         padding: 15px 15px 15px 20px;
         cursor: pointer;
         border-radius: 10px;
         height: 52px; // Hauteur du bouton title
+
+        &:hover {
+            background-color: #FF4040;
+        }
 
     }
 
     .arrow-icon {
 
         width: 24px;
+        transition: transform 0.3s ease;
 
     }
 
@@ -40,8 +45,6 @@
         text-align: left;
         overflow: hidden;
         line-height: 30px;
-        padding-left: 20px;
-        padding-right: 20px;
        
 
         &.open{

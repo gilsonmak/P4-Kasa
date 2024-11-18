@@ -12,14 +12,14 @@ const Carrousel = ({pictures}) => {
         setActiveIndex((prevIndex) => 
             prevIndex === pictures.length -1 ? 0 : prevIndex +1
 
-    );
+      );
     };
 
     const prevSlide = () => {
         setActiveIndex((prevIndex) => 
             prevIndex === 0 ? pictures.length -1 : prevIndex -1
 
-    );
+      );
     };
 
     return (
@@ -49,6 +49,14 @@ const Carrousel = ({pictures}) => {
             />
 
           )}
+
+          
+          {pictures.length > 1 && (
+                <p className="numbers">
+                    {activeIndex + 1} / {pictures.length} {/* Affiche la position actuelle et le nombre total d'images */}
+                </p>
+            )}
+          
         
         </div>
       );
