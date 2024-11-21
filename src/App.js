@@ -1,12 +1,12 @@
 import './App.css';
-import RouterToto from './Router';
+import AppRouter from './Router';
 
 
 function App() {
   return (
     <div className="App">
 
-      <RouterToto />
+      <AppRouter />
      
      
       

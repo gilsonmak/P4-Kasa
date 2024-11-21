@@ -34,16 +34,14 @@ function HousingPage() {
                     <div className="tags-container">
                         <Tags tags={logement.tags}  />
                     </div>
-
-
+                </div>
+                <div className="host-container">
+                    <div className="name-picture">
+                        <p className="host-name">{logement.host.name}</p>
+                        <img className="host-picture" src={logement.host.picture} alt={logement.title} />
+                    </div>
 
                 </div>
-
-
-
-
-
-                
             </div>
         </div> 
        

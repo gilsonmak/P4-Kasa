@@ -28,3 +28,49 @@
     margin-top: 5px;
     text-align: left;
 }
+
+.host-container {
+    margin-top: 24px;
+
+    @media (max-width:768px) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 16px;
+        justify-content: space-between;
+    }
+}
+
+.name-picrure {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 10px;
+
+    @media(max-width: 768px) {
+        align-items: center;
+    }
+
+}
+
+.host-name {
+    font-size: 18px;
+
+    @media(max-width: 768px){
+        font-size: 12px;
+        align-self: flex-start;
+    }
+}
+
+.host-picture {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+
+    @media(max-width: 768px) {
+        width: 32px;
+        height: 32px;
+    }
+}
