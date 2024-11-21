@@ -6,8 +6,6 @@ import Collapse from "../../Components/Collapse/Collapse";
 import aboutJson from "../../Data/about.json"
 
 
-
-
 function AboutPage() {
 
     return (

@@ -2,6 +2,8 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import logements from "../../Data/logements.json"
 import Carrousel from "../../Components/Carrousel/Carrousel";
+import "./HousingPage.scss"
+import Tags from "../../Components/Tags/Tags";
 
 
 
@@ -18,9 +20,31 @@ function HousingPage() {
 
     return (
         <div>
-             <Carrousel pictures={logement.pictures} />
-            <h1>{logement.title}</h1>
-            <p> Description :{logement.description}</p>
+            <Carrousel pictures={logement.pictures} />
+        {/*    <h1>{logement.title}</h1>
+            <p> Description :{logement.description}</p>*/}
+            <div className="property-details">
+                <div className="title-location-container">
+                    <div className="property-title">
+                        {logement.title}
+                    </div>
+                    <div className="property-location">
+                        {logement.location}
+                    </div>
+                    <div className="tags-container">
+                        <Tags tags={logement.tags}  />
+                    </div>
+
+
+
+                </div>
+
+
+
+
+
+                
+            </div>
         </div> 
        
     )
