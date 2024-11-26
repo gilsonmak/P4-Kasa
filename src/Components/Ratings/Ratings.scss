@@ -1,0 +1,11 @@
+.ratings {
+    height: 24px;
+    margin-right: 15px;
+    margin-top: 5px;
+
+    @media (max-width: 768px) {
+            height: 13px;
+            margin-right: 10px;
+            margin-top: 0;
+        }
+}

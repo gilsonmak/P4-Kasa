@@ -56,7 +56,8 @@
 }
 
 .host-name {
-    font-size: 18px;
+    font-size: 15px;
+    margin: 0;
 
     @media(max-width: 768px){
         font-size: 12px;
@@ -65,12 +66,43 @@
 }
 
 .host-picture {
-    height: 64px;
-    width: 64px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
 
     @media(max-width: 768px) {
         width: 32px;
         height: 32px;
     }
+}
+
+.collapse-section {
+    width: 92%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+    margin-left: 52px;
+    margin-bottom: 320px;
+
+    @media(max-width:768px) {
+
+        gap: 10px;
+        width: 105%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 115px;
+    }
+}
+
+.collapse-title {
+
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+
+    @media (max-width: 768px) {
+        font-size: 13px;
+      }
+    
 }

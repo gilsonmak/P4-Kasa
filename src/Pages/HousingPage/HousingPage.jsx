@@ -4,6 +4,9 @@ import logements from "../../Data/logements.json"
 import Carrousel from "../../Components/Carrousel/Carrousel";
 import "./HousingPage.scss"
 import Tags from "../../Components/Tags/Tags";
+import Ratings from "../../Components/Ratings/Ratings";
+import Collapse from "../../Components/Collapse/Collapse";
+
 
 
 
@@ -19,7 +22,7 @@ function HousingPage() {
     } 
 
     return (
-        <div>
+        <main>
             <Carrousel pictures={logement.pictures} />
         {/*    <h1>{logement.title}</h1>
             <p> Description :{logement.description}</p>*/}
@@ -40,10 +43,31 @@ function HousingPage() {
                         <p className="host-name">{logement.host.name}</p>
                         <img className="host-picture" src={logement.host.picture} alt={logement.title} />
                     </div>
+                    <div className="rating-container">
+                        <Ratings rating={logement.rating} className="ratings" />
+                    </div>
 
                 </div>
             </div>
-        </div> 
+            <div className="collapse-section">
+                  
+                <Collapse title="Description" className="collapse-title" description={logement.description} 
+                
+                />
+
+                <Collapse
+                title="Équipements" className="collapse-title"
+                description={
+                    <ul className="list-equipement">
+                        {logement.equipments.map((equipment, index) => (
+                            <li key={index}>{equipment}</li>
+                        ))}
+                    </ul>
+                }
+                />
+               
+            </div> 
+        </main> 
        
     )
 }
