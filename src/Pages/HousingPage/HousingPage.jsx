@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import logements from "../../Data/logements.json"
 import Carrousel from "../../Components/Carrousel/Carrousel";
 import "./HousingPage.scss"
@@ -18,7 +18,7 @@ function HousingPage() {
     const logement = logements.find(logement => logement.id === id);
 
    if (!logement) {
-        return <div>Logement non trouvé</div>
+        return <Navigate to="*" />
     } 
 
     return (
@@ -64,7 +64,7 @@ function HousingPage() {
                         ))}
                     </ul>
                 }
-                />
+            />
                
             </div> 
         </main> 

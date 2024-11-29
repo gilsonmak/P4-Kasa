@@ -3,8 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1024px;
-    margin: 0 auto;
+    max-width: 1240px;
+    margin: 10px auto 20px auto;
     padding: 40px 0;
 
 }
@@ -33,7 +33,7 @@ a {
 
     .header {
         padding: 20px;
-        margin: 0 20px;
+        margin: 0 0;
     }
 
     .nav-header {
