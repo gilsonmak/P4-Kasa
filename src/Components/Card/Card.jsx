@@ -1,26 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logements from "../../Data/logements.json"
 import "./Card.scss"
 
 
 
-function Card({id,title,cover}) {
-
-
+const Card = () => {
     return (
-
-        <Link to={`/housingpage/${id}`} className="card-link">
-        <article className="card">
-            <img src={cover} alt={title} />
-            <h2>{title}</h2>
-        </article>
-    </Link>
-
-        
+      <div className='cards'>
+          {logements.map((logement)=>(
+              <div key={logement.id}>
+                  <Link to={`/housingpage/${logement.id}`}>
+                      <div className="housing">
+                          <img src={logement.cover} alt={logement.title} />
+                          <h2>{logement.title}</h2>
+                      </div>
+                  </Link>
+              </div>
+          ))}
+      </div>
     )
-
-
-
-}
+  }
+  
 
 export default Card

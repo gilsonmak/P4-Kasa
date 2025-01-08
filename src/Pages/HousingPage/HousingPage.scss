@@ -58,11 +58,9 @@
     }
 }
 
-.name-picrure {
+.name-picture {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
     gap: 10px;
 
     @media(max-width: 768px) {
@@ -91,6 +89,20 @@
         height: 32px;
     }
 }
+
+.rating-container {
+    display: flex;
+    margin-top: 24px;
+  
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      margin-top: 0;
+      margin-bottom: 16px;
+      justify-content: space-between;
+    }
+  }
 
 .collapse-section {
     display: flex;

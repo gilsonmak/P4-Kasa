@@ -26,15 +26,10 @@ a {
 }
 
 .logo {
-    width: 130px;
+    width: 210px;
 }
 
 @media (max-width: 768px) {
-
-    .header {
-        padding: 20px;
-        margin: 0 0;
-    }
 
     .nav-header {
 
@@ -49,16 +44,11 @@ a {
         &.active {
             text-decoration: underline;
         }
-
-        .logo {
-            width: 130px;
-            height: auto;
-        }
     }
 
-
-
-
-
+    .logo {
+        width: 145px;
+        height: auto;
+    }
 
 }

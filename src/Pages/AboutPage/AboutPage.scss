@@ -1,17 +1,22 @@
 
 
 .collapse {
-
-
  display: flex;
  flex-direction: column;
  justify-content: center;
- padding-left: 7em;
- padding-right: 7em;
+ width: 80%;
+ padding-left: 10%;
+ padding-right: 10%;
  margin-top: 56px;
  margin-bottom: 40px;
- margin-left: 112px;
  gap: 10px;
+
+ @media (max-width: 768px) {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0; 
+
+ }
 
 }
 
