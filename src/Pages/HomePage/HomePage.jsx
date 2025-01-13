@@ -3,8 +3,6 @@ import Banner from "../../Components/Banner/Banner";
 import BackgroundHome from "../../Assets/banner/BannerHome.png"
 import Card from "../../Components/Card/Card"
 
-
-
 function HomePage() {
 
     return (
