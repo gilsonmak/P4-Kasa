@@ -30,6 +30,13 @@
     @media (max-width: 768px) {
 
         .about-title {
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: 500px) {
+
+        .about-title {
             font-size: 13px;
         }
     }

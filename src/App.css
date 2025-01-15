@@ -1,15 +1,20 @@
-
-
 #root {
- display: flex;
+  display: flex;
   justify-content: center;
   max-width: 1440px;
-  margin: 0 100px 0 100px;
-  padding: 0 0;
+  margin: 0 100px;
+  padding: 0;
 
   @media (max-width: 768px) {
+    /* Ajustez les styles pour les écrans plus petits */
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
 
-    max-width: 1440px;
- }
-
+@media (max-width: 500px) {
+  #root {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
