@@ -1,18 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
 import HomePage from "./Pages/HomePage/HomePage"
 import AboutPage from "./Pages/AboutPage/AboutPage"
 import ErrorPage from './Pages/ErrorPage/ErrorPage';
 import HousingPage from "./Pages/HousingPage/HousingPage"
-
-
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
-
-
-
-
 
 function AppRouter() {
     return (
@@ -27,13 +20,6 @@ function AppRouter() {
         </Routes>
         <Footer />
       </Router>
-
-
     )
-
-
-
-
 }
-
 export default AppRouter

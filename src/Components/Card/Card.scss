@@ -33,6 +33,18 @@
     align-items: flex-end;
     transition: transform 0.2s;
 
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
+        pointer-events: none; /* Permet de cliquer sur les éléments en dessous */
+    }
+
 
     img{
         width: 100%;
@@ -48,6 +60,7 @@
         text-decoration: none;
         color: #FFFFFF;
         margin: 20px;
+         z-index: 1; /* Assure que le texte est au-dessus du dégradé */
     }
 
     @media(max-width:768px){
