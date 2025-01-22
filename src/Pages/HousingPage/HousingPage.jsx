@@ -40,9 +40,13 @@ function HousingPage() {
                 </div>
                 <div className="host-container">
                     <div className="name-picture">
-                        <p className="host-name">{logement.host.name}</p>
+                        <p className="host-name">
+                            {logement.host.name.split(' ')[0]} <br />
+                            {logement.host.name.split(' ')[1]}
+                        </p>
                         <img className="host-picture" src={logement.host.picture} alt={logement.title} />
                     </div>
+
                     <div className="rating-container">
                         <Ratings rating={logement.rating} className="ratings" />
                     </div>

@@ -61,6 +61,7 @@
 .name-picture {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     gap: 10px;
 
     @media(max-width: 768px) {
@@ -70,8 +71,9 @@
 }
 
 .host-name {
-    font-size: 15px;
+    font-size: 18px;
     margin: 0;
+    color: #FF6060;
 
     @media(max-width: 768px){
         font-size: 12px;
