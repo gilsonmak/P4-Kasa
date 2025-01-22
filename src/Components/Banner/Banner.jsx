@@ -11,7 +11,7 @@ function Banner(props) {
         <div className="banner">
             <img src={props.bannerImage} alt="Banner Home" />
             <div className="banner-text">
-                <h1>{props.bannerText}</h1>
+                {props.bannerText && <h1>{props.bannerText}</h1>}
             </div>
         </div>
     )
